@@ -30,10 +30,11 @@ export default {
   },
   data() {
     return {
-      chartData: {}, // Данные для графика
-      selectedPeriod: 'day', // Выбранный пользователем период
-      startDate: null, // Начальная дата для пользовательского периода
-      endDate: null, // Конечная дата для пользовательского периода
+      // Данные для графика
+      chartData: {},
+      selectedPeriod: 'day', 
+      startDate: null, 
+      endDate: null, 
     };
   },
   mounted() {
@@ -62,9 +63,9 @@ export default {
           {
             label: 'Цена Биткоина', // Заголовок набора данных
             data: data.historicalPrices.map((price) => price.price), // Массив цен биткоина
-            backgroundColor: 'rgba(75, 192, 192, 0.2)', // Цвет заливки области под графиком
-            borderColor: 'rgba(75, 192, 192, 1)', // Цвет линии графика
-            borderWidth: 1, // Толщина линии графика
+            backgroundColor: 'rgba(75, 192, 192, 0.2)', 
+            borderColor: 'rgba(75, 192, 192, 1)', 
+            borderWidth: 1,
           },
         ],
       };
